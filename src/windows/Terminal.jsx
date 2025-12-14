@@ -8,11 +8,12 @@ const Terminal = () => {
         <>
             <div id="window-header">
                 <WindowControls target="terminal"/>
-                <h2>Tech Stack</h2>
+                <h2 className="text-black">Tech Stack</h2>
             </div>
             <div className="techstack">
-                <p>
-                    <span className="font-bold">@ananya %</span>
+                <p className="flex-col">
+                    Last login: Mon 15 May on 00:00:00 <br></br>
+                    <span className="font-bold"> ananyajain@Ananyas-MacBook-Air %</span>
                     show tech stack
                 </p>
                 <div className="label">
@@ -21,7 +22,7 @@ const Terminal = () => {
                     </p>
                     <p>Technologies</p>
                 </div>
-                <ul className="content">
+                <ul className="content ">
                     {techStack.map(({category, items}) => (
                         <li className="flex items-center" key="Category">
                             <CheckIcon className="check" size={20}/>
@@ -39,8 +40,8 @@ const Terminal = () => {
                     <p>
                         <CheckIcon size={20} /> 5/5 stacks loaded successfully (100%)
                     </p>
-                    <p className="text-black">
-                        <FlagIcon size={15} fill="black" />
+                    <p className="text-white">
+                        <FlagIcon size={15} fill="red" />
                         Render time: 6 ms
                     </p>
                 </div>
