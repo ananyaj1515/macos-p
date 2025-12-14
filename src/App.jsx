@@ -1,5 +1,5 @@
 import { Navbar, Welcome, Dock } from "#components";
-import { Safari, Terminal, Resume } from "#windows";
+import { Safari, Terminal, Resume, Finder, Text, Image } from "#windows";
 import gsap from "gsap";
 import { Draggable } from "gsap/Draggable";
 
@@ -15,6 +15,9 @@ const App  = () => {
       <Terminal/>
       <Safari/>
       <Resume/>
+      <Finder/>
+      <Text/>
+      <Image/>
     </main>
   )
 }
