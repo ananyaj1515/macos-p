@@ -67,11 +67,17 @@ const dockApps = [
     canOpen: true,
   },
   {
-    id: "trash",
-    name: "Archive", // was "Trash"
-    icon: "trash.png",
-    canOpen: false,
+    id: "notes",
+    name: "Notes",
+    icon: "notes.png",
+    canOpen: true,
   },
+  {
+    id: "calendar",
+    name: "Timeline",
+    icon: "calendar.png",
+    canOpen: true,
+  }
 ];
 
 const blogPosts = [
@@ -503,6 +509,8 @@ const WINDOW_CONFIG = {
   safari: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   photos: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  notes: {isOpen: false, zIndex: INITIAL_Z_INDEX, data: null},
+  calendar: {isOpen: false, zIndex: INITIAL_Z_INDEX, data: null},
   txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
 };
