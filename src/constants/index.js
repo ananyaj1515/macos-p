@@ -1,3 +1,5 @@
+
+
 const navLinks = [
   {
     id: 1,
@@ -235,7 +237,7 @@ const WORK_LOCATION = {
     // ▶ Project 1
     {
       id: 5,
-      name: "Nike Ecommerce Website Application",
+      name: "Co-Living Management Full-Stack Mobile App",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
@@ -243,7 +245,7 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Nike Project.txt",
+          name: "Wavelength Project.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
@@ -257,17 +259,17 @@ const WORK_LOCATION = {
         },
         {
           id: 2,
-          name: "nike.com",
+          name: "github.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+          href: "https://github.com/Wavelength-Coliving",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "nike.png",
-          icon: "/images/image.png",
+          name: "logo.png",
+          icon: "/images/wavelength.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
@@ -279,9 +281,18 @@ const WORK_LOCATION = {
           icon: "/images/plain.png",
           kind: "file",
           fileType: "fig",
-          href: "https://google.com",
+          href: "https://www.figma.com/design/1UEdY9rbUhAMlUt3NCBuMG/Roomies?node-id=3-2&t=VPUuZBtwueriPdiK-1",
           position: "top-60 right-20",
         },
+        {
+          id: 6,
+          name: "pitch.mp4",
+          icon: "/images/thumbnail.png",
+          kind: "file",
+          fileType: "video",
+          position: "top-30 right-50",
+          videoUrl: "/videos/pitch.mp4"
+        }
       ],
     },
 
@@ -500,19 +511,20 @@ export const locations = {
   trash: TRASH_LOCATION,
 };
 
-const INITIAL_Z_INDEX = 1000;
+// const INITIAL_Z_INDEX = 1000;
 
-const WINDOW_CONFIG = {
-  finder: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  contact: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  resume: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  safari: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  photos: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  notes: {isOpen: false, zIndex: INITIAL_Z_INDEX, data: null},
-  calendar: {isOpen: false, zIndex: INITIAL_Z_INDEX, data: null},
-  txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-};
+// // const WINDOW_CONFIG = {
+// //   finder: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+// //   contact: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+// //   resume: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+// //   safari: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+// //   photos: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+// //   terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+// //   notes: {isOpen: false, zIndex: INITIAL_Z_INDEX, data: null},
+// //   calendar: {isOpen: false, zIndex: INITIAL_Z_INDEX, data: null},
+// //   txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+// //   imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+// //   videofile: {isOpen: false,zIndex: INITIAL_Z_INDEX, data: null}
+// // };
 
-export { INITIAL_Z_INDEX, WINDOW_CONFIG };
+// export { INITIAL_Z_INDEX, WINDOW_CONFIG };

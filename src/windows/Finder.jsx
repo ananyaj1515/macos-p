@@ -17,6 +17,9 @@ const Finder = () => {
         if (item.kind === "folder") {
             return setActiveLocation(item)
         }
+        if (item.fileType === 'video') {
+            return openWindow('video', item)
+        }
         if (['fig', 'url'].includes(item.fileType) && item.href) {
             return window.open(item.href, "_blank")
         }
