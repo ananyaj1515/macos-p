@@ -1,11 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
 const LiquidGradientBackground = () => {
   const containerRef = useRef(null);
   const appRef = useRef(null);
-  const [currentScheme, setCurrentScheme] = useState(1);
-  const [showAdjuster, setShowAdjuster] = useState(false);
 
   useEffect(() => {
     // TouchTexture class
@@ -111,22 +109,21 @@ const LiquidGradientBackground = () => {
         this.uniforms = {
           uTime: { value: 0 },
           uResolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) },
-          uColor1: { value: new THREE.Vector3(0.945, 0.353, 0.133) },
-          uColor2: { value: new THREE.Vector3(0.039, 0.055, 0.153) },
+          uColor1: { value: new THREE.Vector3(0.945, 0.353, 0.133) }, // Orange
+          uColor2: { value: new THREE.Vector3(0.039, 0.055, 0.153) }, // Navy Blue
           uColor3: { value: new THREE.Vector3(0.945, 0.353, 0.133) },
           uColor4: { value: new THREE.Vector3(0.039, 0.055, 0.153) },
           uColor5: { value: new THREE.Vector3(0.945, 0.353, 0.133) },
           uColor6: { value: new THREE.Vector3(0.039, 0.055, 0.153) },
-          uSpeed: { value: 1.2 },
-          uIntensity: { value: 1.4},
+          uSpeed: { value: 1.5 },
+          uIntensity: { value: 1.8 },
           uTouchTexture: { value: null },
           uGrainIntensity: { value: 0.08 },
-          uZoom: { value: 1.0 },
           uDarkNavy: { value: new THREE.Vector3(0.039, 0.055, 0.153) },
-          uGradientSize: { value: 1.0 },
-          uGradientCount: { value: 6.0 },
-          uColor1Weight: { value: 1.0 },
-          uColor2Weight: { value: 1.0 }
+          uGradientSize: { value: 0.45 },
+          uGradientCount: { value: 12.0 },
+          uColor1Weight: { value: 0.5 },
+          uColor2Weight: { value: 1.8 }
         };
       }
 
@@ -156,7 +153,6 @@ const LiquidGradientBackground = () => {
           uniform float uIntensity;
           uniform sampler2D uTouchTexture;
           uniform float uGrainIntensity;
-          uniform float uZoom;
           uniform vec3 uDarkNavy;
           uniform float uGradientSize;
           uniform float uGradientCount;
@@ -183,12 +179,25 @@ const LiquidGradientBackground = () => {
             vec2 center5 = vec2(0.5 + sin(time * uSpeed * 0.7) * 0.35, 0.5 + cos(time * uSpeed * 0.6) * 0.35);
             vec2 center6 = vec2(0.5 + cos(time * uSpeed * 0.45) * 0.5, 0.5 + sin(time * uSpeed * 0.65) * 0.5);
             
+            vec2 center7 = vec2(0.5 + sin(time * uSpeed * 0.55) * 0.38, 0.5 + cos(time * uSpeed * 0.48) * 0.42);
+            vec2 center8 = vec2(0.5 + cos(time * uSpeed * 0.65) * 0.36, 0.5 + sin(time * uSpeed * 0.52) * 0.44);
+            vec2 center9 = vec2(0.5 + sin(time * uSpeed * 0.42) * 0.41, 0.5 + cos(time * uSpeed * 0.58) * 0.39);
+            vec2 center10 = vec2(0.5 + cos(time * uSpeed * 0.48) * 0.37, 0.5 + sin(time * uSpeed * 0.62) * 0.43);
+            vec2 center11 = vec2(0.5 + sin(time * uSpeed * 0.68) * 0.33, 0.5 + cos(time * uSpeed * 0.44) * 0.46);
+            vec2 center12 = vec2(0.5 + cos(time * uSpeed * 0.38) * 0.39, 0.5 + sin(time * uSpeed * 0.56) * 0.41);
+            
             float dist1 = length(uv - center1);
             float dist2 = length(uv - center2);
             float dist3 = length(uv - center3);
             float dist4 = length(uv - center4);
             float dist5 = length(uv - center5);
             float dist6 = length(uv - center6);
+            float dist7 = length(uv - center7);
+            float dist8 = length(uv - center8);
+            float dist9 = length(uv - center9);
+            float dist10 = length(uv - center10);
+            float dist11 = length(uv - center11);
+            float dist12 = length(uv - center12);
             
             float influence1 = 1.0 - smoothstep(0.0, gradientRadius, dist1);
             float influence2 = 1.0 - smoothstep(0.0, gradientRadius, dist2);
@@ -196,6 +205,33 @@ const LiquidGradientBackground = () => {
             float influence4 = 1.0 - smoothstep(0.0, gradientRadius, dist4);
             float influence5 = 1.0 - smoothstep(0.0, gradientRadius, dist5);
             float influence6 = 1.0 - smoothstep(0.0, gradientRadius, dist6);
+            float influence7 = 1.0 - smoothstep(0.0, gradientRadius, dist7);
+            float influence8 = 1.0 - smoothstep(0.0, gradientRadius, dist8);
+            float influence9 = 1.0 - smoothstep(0.0, gradientRadius, dist9);
+            float influence10 = 1.0 - smoothstep(0.0, gradientRadius, dist10);
+            float influence11 = 1.0 - smoothstep(0.0, gradientRadius, dist11);
+            float influence12 = 1.0 - smoothstep(0.0, gradientRadius, dist12);
+            
+            vec2 rotatedUv1 = uv - 0.5;
+            float angle1 = time * uSpeed * 0.15;
+            rotatedUv1 = vec2(
+              rotatedUv1.x * cos(angle1) - rotatedUv1.y * sin(angle1),
+              rotatedUv1.x * sin(angle1) + rotatedUv1.y * cos(angle1)
+            );
+            rotatedUv1 += 0.5;
+            
+            vec2 rotatedUv2 = uv - 0.5;
+            float angle2 = -time * uSpeed * 0.12;
+            rotatedUv2 = vec2(
+              rotatedUv2.x * cos(angle2) - rotatedUv2.y * sin(angle2),
+              rotatedUv2.x * sin(angle2) + rotatedUv2.y * cos(angle2)
+            );
+            rotatedUv2 += 0.5;
+            
+            float radialGradient1 = length(rotatedUv1 - 0.5);
+            float radialGradient2 = length(rotatedUv2 - 0.5);
+            float radialInfluence1 = 1.0 - smoothstep(0.0, 0.8, radialGradient1);
+            float radialInfluence2 = 1.0 - smoothstep(0.0, 0.8, radialGradient2);
             
             vec3 color = vec3(0.0);
             color += uColor1 * influence1 * (0.55 + 0.45 * sin(time * uSpeed)) * uColor1Weight;
@@ -204,6 +240,20 @@ const LiquidGradientBackground = () => {
             color += uColor4 * influence4 * (0.55 + 0.45 * cos(time * uSpeed * 1.3)) * uColor2Weight;
             color += uColor5 * influence5 * (0.55 + 0.45 * sin(time * uSpeed * 1.1)) * uColor1Weight;
             color += uColor6 * influence6 * (0.55 + 0.45 * cos(time * uSpeed * 0.9)) * uColor2Weight;
+            
+            if (uGradientCount > 6.0) {
+              color += uColor1 * influence7 * (0.55 + 0.45 * sin(time * uSpeed * 1.4)) * uColor1Weight;
+              color += uColor2 * influence8 * (0.55 + 0.45 * cos(time * uSpeed * 1.5)) * uColor2Weight;
+              color += uColor3 * influence9 * (0.55 + 0.45 * sin(time * uSpeed * 1.6)) * uColor1Weight;
+              color += uColor4 * influence10 * (0.55 + 0.45 * cos(time * uSpeed * 1.7)) * uColor2Weight;
+            }
+            if (uGradientCount > 10.0) {
+              color += uColor5 * influence11 * (0.55 + 0.45 * sin(time * uSpeed * 1.8)) * uColor1Weight;
+              color += uColor6 * influence12 * (0.55 + 0.45 * cos(time * uSpeed * 1.9)) * uColor2Weight;
+            }
+            
+            color += mix(uColor1, uColor3, radialInfluence1) * 0.45 * uColor1Weight;
+            color += mix(uColor2, uColor4, radialInfluence2) * 0.4 * uColor2Weight;
             
             color = clamp(color, vec3(0.0), vec3(1.0)) * uIntensity;
             
@@ -215,6 +265,12 @@ const LiquidGradientBackground = () => {
             float brightness1 = length(color);
             float mixFactor1 = max(brightness1 * 1.2, 0.15);
             color = mix(uDarkNavy, color, mixFactor1);
+            
+            float maxBrightness = 1.0;
+            float brightness = length(color);
+            if (brightness > maxBrightness) {
+              color = color * (maxBrightness / brightness);
+            }
             
             return color;
           }
@@ -250,6 +306,12 @@ const LiquidGradientBackground = () => {
             color = mix(uDarkNavy, color, mixFactor2);
             
             color = clamp(color, vec3(0.0), vec3(1.0));
+            
+            float maxBrightness = 1.0;
+            float brightness = length(color);
+            if (brightness > maxBrightness) {
+              color = color * (maxBrightness / brightness);
+            }
             
             gl_FragColor = vec4(color, 1.0);
           }
@@ -308,94 +370,11 @@ const LiquidGradientBackground = () => {
         this.gradientBackground = new GradientBackground(this);
         this.gradientBackground.uniforms.uTouchTexture.value = this.touchTexture.texture;
 
-        this.colorSchemes = {
-          1: {
-            color1: new THREE.Vector3(0.945, 0.353, 0.133),
-            color2: new THREE.Vector3(0.039, 0.055, 0.153)
-          },
-          2: {
-            color1: new THREE.Vector3(1.0, 0.424, 0.314),
-            color2: new THREE.Vector3(0.251, 0.878, 0.816)
-          },
-          3: {
-            color1: new THREE.Vector3(0.945, 0.353, 0.133),
-            color2: new THREE.Vector3(0.039, 0.055, 0.153),
-            color3: new THREE.Vector3(0.251, 0.878, 0.816)
-          },
-          4: {
-            color1: new THREE.Vector3(0.949, 0.4, 0.2),
-            color2: new THREE.Vector3(0.176, 0.42, 0.427),
-            color3: new THREE.Vector3(0.82, 0.686, 0.612)
-          },
-          5: {
-            color1: new THREE.Vector3(0.945, 0.353, 0.133),
-            color2: new THREE.Vector3(0.0, 0.259, 0.22),
-            color3: new THREE.Vector3(0.945, 0.353, 0.133),
-            color4: new THREE.Vector3(0.0, 0.0, 0.0),
-            color5: new THREE.Vector3(0.945, 0.353, 0.133),
-            color6: new THREE.Vector3(0.0, 0.0, 0.0)
-          },
-          6: {
-            color1: new THREE.Vector3(0.8, 0.2, 0.9),  // Purple
-            color2: new THREE.Vector3(1.0, 0.4, 0.7),  // Pink
-            color3: new THREE.Vector3(0.4, 0.1, 0.6),  // Deep purple
-            }
-          },
-        
-        this.currentScheme = 1;
-
         this.init();
-      }
-
-      setColorScheme(scheme) {
-        if (!this.colorSchemes[scheme]) return;
-        this.currentScheme = scheme;
-        const colors = this.colorSchemes[scheme];
-        const uniforms = this.gradientBackground.uniforms;
-
-        if (scheme === 3) {
-          uniforms.uColor1.value.copy(colors.color1);
-          uniforms.uColor2.value.copy(colors.color2);
-          uniforms.uColor3.value.copy(colors.color3);
-          uniforms.uColor4.value.copy(colors.color1);
-          uniforms.uColor5.value.copy(colors.color2);
-          uniforms.uColor6.value.copy(colors.color3);
-        } else if (scheme === 4 || scheme === 5) {
-          uniforms.uColor1.value.copy(colors.color1);
-          uniforms.uColor2.value.copy(colors.color2);
-          uniforms.uColor3.value.copy(colors.color3 || colors.color1);
-          uniforms.uColor4.value.copy(colors.color4 || colors.color2);
-          uniforms.uColor5.value.copy(colors.color5 || colors.color1);
-          uniforms.uColor6.value.copy(colors.color6 || colors.color2);
-        } else {
-          uniforms.uColor1.value.copy(colors.color1);
-          uniforms.uColor2.value.copy(colors.color2);
-          uniforms.uColor3.value.copy(colors.color1);
-          uniforms.uColor4.value.copy(colors.color2);
-          uniforms.uColor5.value.copy(colors.color1);
-          uniforms.uColor6.value.copy(colors.color2);
-        }
-
-        if (scheme === 1 || scheme === 5) {
-          this.scene.background = new THREE.Color(0x0a0e27);
-          uniforms.uDarkNavy.value.set(0.039, 0.055, 0.153);
-          uniforms.uGradientSize.value = 0.45;
-          uniforms.uGradientCount.value = 12.0;
-          uniforms.uSpeed.value = 1.5;
-          uniforms.uColor1Weight.value = 0.5;
-          uniforms.uColor2Weight.value = 1.8;
-        } else {
-          uniforms.uGradientSize.value = 1.0;
-          uniforms.uGradientCount.value = 6.0;
-          uniforms.uSpeed.value = 1.2;
-          uniforms.uColor1Weight.value = 1.0;
-          uniforms.uColor2Weight.value = 1.0;
-        }
       }
 
       init() {
         this.gradientBackground.init();
-        this.setColorScheme(1);
         this.render();
         this.tick();
 
@@ -480,8 +459,8 @@ const LiquidGradientBackground = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 w-full h-screen overflow-hidden bg-[#0a0e27] -z-10">
-      <div ref={containerRef} className="fixed inset-0" />
+    <div className="fixed inset-0 w-full h-screen overflow-hidden -z-10">
+      <div ref={containerRef} className="w-full h-full" />
     </div>
   );
 };

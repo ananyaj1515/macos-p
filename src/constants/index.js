@@ -361,7 +361,7 @@ const WORK_LOCATION = {
     // ▶ Project 2
     {
       id: 6,
-      name: "AI Resume Analyzer",
+      name: "Card Hand Recognition Project",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
@@ -493,12 +493,12 @@ const ABOUT_LOCATION = {
     },
     {
       id: 3,
-      name: "conference-me.png",
-      icon: "/images/image.png",
+      name: "random-me.png",
+      icon: "/images/ananya-3.jpg",
       kind: "file",
       fileType: "img",
       position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg",
+      imageUrl: "/images/ananya-3.jpg",
     },
     {
       id: 4,
@@ -510,10 +510,10 @@ const ABOUT_LOCATION = {
       subtitle: "Meet the Developer Behind the Code",
       image: "/images/ananya.jpg",
       description: [
-        "Hey! I'm Ananya, a computer science student at the National University of Singapore",
-        "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-        "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-        "Outside of dev work, you'll find me making voxel art on Blender tweaking layouts at 2AM, cooking random cravings or watching documentaries 😅",
+        "Hey! I'm Ananya, a Computer Science and Enterpreurship student at the National University of Singapore",
+        "I specialize in Artificial Intelligence and Computer Graphics, with a strong interest in building systems that are both intelligent and visually engaging.",
+        "Most of my projects start as small ideas to solve everyday problems in my life, and usually turn into experiments with new tech, visuals, or interactions.",
+        "Outside of development, you’ll find me experimenting with voxel art in Blender, cooking random cravings, or getting lost in documentaries",
       ],
     },
   ],
