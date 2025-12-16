@@ -227,6 +227,68 @@ export {
   gallery,
 };
 
+
+const ME_LOCATION = {
+  id: 1,
+  type: "me",
+  name: "me",
+  icon: "/icons/work.svg",
+  kind: "note",
+  title: "Welcome",
+  description: [
+            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
+            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
+            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
+            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+          ],
+}
+
+const NOTE1_LOCATION = {
+  id: 2,
+  type: "note1",
+  name: "note1",
+  icon: "/icons/work.svg",
+  kind: "note",
+  title: "Welcome",
+  description: [
+            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
+            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
+            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
+            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+          ],
+}
+
+const NOTE2_LOCATION = {
+  id: 3,
+  type: "note2",
+  name: "note2",
+  icon: "/icons/work.svg",
+  kind: "note",
+  title: "Welcome",
+  description: [
+            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
+            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
+            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
+            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+          ],
+}
+const NOTE3_LOCATION = {
+  id: 4,
+  type: "note3",
+  name: "note3",
+  icon: "/icons/work.svg",
+  kind: "note",
+  title: "Welcome",
+  description: [
+            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
+            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
+            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
+            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+          ],
+}
+
+
+
 const WORK_LOCATION = {
   id: 1,
   type: "work",
@@ -273,7 +335,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-1.png",
+          imageUrl: "/images/wavelength.png",
         },
         {
           id: 5,
@@ -478,8 +540,8 @@ const RESUME_LOCATION = {
 
 const TRASH_LOCATION = {
   id: 4,
-  type: "trash",
-  name: "Trash",
+  type: "competitions",
+  name: "Competitions",
   icon: "/icons/trash.svg",
   kind: "folder",
   children: [
@@ -508,8 +570,15 @@ export const locations = {
   work: WORK_LOCATION,
   about: ABOUT_LOCATION,
   resume: RESUME_LOCATION,
-  trash: TRASH_LOCATION,
+  compeition: TRASH_LOCATION,
 };
+
+export const notes = {
+  me: ME_LOCATION,
+  note1: NOTE1_LOCATION,
+  note2: NOTE2_LOCATION,
+  note3: NOTE3_LOCATION
+}
 
 // const INITIAL_Z_INDEX = 1000;
 
