@@ -87,23 +87,23 @@ const blogPosts = [
     id: 1,
     date: "Sep 2, 2025",
     title:
-      "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
+      "###",
     image: "/images/blog1.png",
-    link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+    link: "",
   },
   {
     id: 2,
     date: "Aug 28, 2025",
-    title: "The Ultimate Guide to Mastering Three.js for 3D Development",
+    title: "###",
     image: "/images/blog2.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+    link: "",
   },
   {
     id: 3,
     date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",
+    title: "###",
     image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+    link: "",
   },
 ];
 
@@ -145,20 +145,6 @@ const socials = [
     icon: "/icons/github.svg",
     bg: "#f4656b",
     link: "https://github.com/ananyaj1515",
-  },
-  {
-    id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
-    bg: "#4bcb63",
-    link: "https://jsmastery.com/",
-  },
-  {
-    id: 3,
-    text: "Twitter/X",
-    icon: "/icons/twitter.svg",
-    bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
   },
   {
     id: 4,
@@ -369,30 +355,27 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "AI Resume Analyzer Project.txt",
+          name: "Card Hand Recognition Project.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
           description: [
-            "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-            "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-            "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-            "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+            "llorem ipsum ildor"
           ],
         },
         {
           id: 2,
-          name: "ai-resume-analyzer.com",
+          name: "cardVision.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+          href: "https://ananyajain.netlify.app",
           position: "top-20 left-20",
         },
         {
           id: 4,
-          name: "ai-resume-analyzer.png",
+          name: "cardVision.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
@@ -414,7 +397,7 @@ const WORK_LOCATION = {
     // ▶ Project 3
     {
       id: 7,
-      name: "Food Delivery App",
+      name: "Cricket Wagon Wheel Visualiser",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
@@ -422,30 +405,27 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Food Delivery App Project.txt",
+          name: "Cricket Wagon Wheel Visualiser",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-            "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-            "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-            "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
-          ],
+            "lorem ipsum ildor"
+          ]
         },
         {
           id: 2,
-          name: "food-delivery-app.com",
+          name: "cricket-wagon-wheel.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+          href: "https://ananyajain.netlify.app",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "food-delivery-app.png",
+          name: "cricket-wagon-wheel.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
@@ -547,7 +527,7 @@ const TRASH_LOCATION = {
   children: [
     {
       id: 1,
-      name: "trash1.png",
+      name: "RePair.png",
       icon: "/images/image.png",
       kind: "file",
       fileType: "img",
@@ -556,7 +536,7 @@ const TRASH_LOCATION = {
     },
     {
       id: 2,
-      name: "trash2.png",
+      name: "StrideGuard.png",
       icon: "/images/image.png",
       kind: "file",
       fileType: "img",

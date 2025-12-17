@@ -13,7 +13,6 @@ const Contact = () => {
                 <div className="flex items-center gap-6">
                     <div>
                         <h3 className="text-white">Let's connect</h3>
-                        <p className="text-white">Got an idea or a bug to squash? I'm in!</p>
                         <p className="text-white">ananyaj1515@gmail.com</p>
                         <p className="text-white">ananya.jain@u.nus.edu</p>
                     </div>
