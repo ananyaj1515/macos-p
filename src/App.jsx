@@ -1,5 +1,5 @@
 import { Navbar, Welcome, Dock, LiquidGradientBackground } from "#components";
-import { Safari, Terminal, Resume, Finder, Text, Image, Contact, Video, } from "#windows";
+import { Safari, Terminal, Resume, Finder, Text, Image, Contact, Video, Photos, } from "#windows";
 import gsap from "gsap";
 import { Draggable } from "gsap/Draggable";
 
@@ -21,6 +21,7 @@ const App  = () => {
       <Image/>
       <Contact/>
       <Video/>
+      <Photos/>
     </main>
   )
 }

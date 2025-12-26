@@ -6,6 +6,7 @@ import Text from "./Text";
 import Image from "./Image";
 import Contact from "./Contact";
 import Video from "./Video";
+import Photos from './Photos'
 // import Notes from "./Notes"
 
-export {Terminal, Safari, Resume, Finder, Text, Image, Contact, Video}
+export {Terminal, Safari, Resume, Finder, Text, Image, Contact, Video, Photos}
