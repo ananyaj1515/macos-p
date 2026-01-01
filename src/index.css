@@ -236,7 +236,7 @@ body {
     }
   }
 
-  #photos {
+  /* #photos {
     @apply max-w-3xl absolute top-96 left-1/2 -translate-y-1/2 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
 
     .sidebar {
@@ -294,7 +294,7 @@ body {
         }
       }
     }
-  }
+  } */
 
   #resume {
     @apply w-fit h-fit absolute top-16 left-7/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
@@ -325,7 +325,7 @@ body {
         }
 
         .not-active {
-          @apply text-[#ffffff] hover:bg-gray-200;
+          @apply text-[#ffffff];
         }
 
         li {

@@ -214,20 +214,20 @@ export {
 };
 
 
-const ME_LOCATION = {
-  id: 1,
-  type: "me",
-  name: "me",
-  icon: "/icons/work.svg",
-  kind: "note",
-  title: "Welcome",
-  description: [
-            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
-          ],
-}
+// const ME_LOCATION = {
+//   id: 1,
+//   type: "me",
+//   name: "me",
+//   icon: "/icons/work.svg",
+//   kind: "note",
+//   title: "Welcome",
+//   description: [
+//             "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
+//             "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
+//             "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
+//             "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+//           ],
+// }
 
 const NOTE1_LOCATION = {
   id: 2,
@@ -553,12 +553,80 @@ export const locations = {
   compeition: TRASH_LOCATION,
 };
 
-export const notes = {
-  me: ME_LOCATION,
-  note1: NOTE1_LOCATION,
-  note2: NOTE2_LOCATION,
-  note3: NOTE3_LOCATION
+const ME_LOCATION = {
+  id: 1,
+  type: "photos",
+  name: "Me",
+  icon: "/icons/trash.svg",
+  kind: "album",
 }
+
+const FAVOURTIE_LOCATION = {
+  id: 4,
+  type: "photos",
+  name: "Favourites",
+  icon: "/icons/trash.svg",
+  kind: "album",
+  children: [
+        {
+          id: 1,
+          name: "Me",
+          icon: "/gallery/singapore.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 right-80",
+          imageUrl: "/images/project-3.png",
+        },
+        {
+          id: 2,
+          name: "Singapore",
+          icon: "/gallery/singapore.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 right-80",
+          imageUrl: "/images/project-3.png",
+        },
+        {
+          id: 3,
+          name: "College",
+          icon: "/gallery/college.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 right-80",
+          imageUrl: "/images/project-3.png",
+        },
+  ]
+}
+
+const SINGAPORE_LOCATION = {
+  id: 2,
+  type: "photos",
+  name: "Singapore",
+  icon: "/icons/trash.svg",
+  kind: "album",
+}
+
+const COLLEGE_LOCATION = {
+  id: 3,
+  type: "photos",
+  name: "College",
+  icon: "/icons/trash.svg",
+  kind: "album",
+}
+
+export const photos = {
+  favourite: FAVOURTIE_LOCATION,
+  me: ME_LOCATION,
+  singapore: SINGAPORE_LOCATION,
+  college: COLLEGE_LOCATION
+}
+
+// export const notes = {
+//   me: ME_LOCATION,
+//   note1: NOTE1_LOCATION,
+//   note2: NOTE2_LOCATION,
+//   note3: NOTE3_LOCATION
+// }
 
 // const INITIAL_Z_INDEX = 1000;
 
