@@ -56,6 +56,12 @@ const Finder = () => {
                             {renderList(locations.work.children)}
                         </ul>
                     </div>
+                    <div>
+                        <h3> Competitions</h3>
+                        <ul>
+                            {renderList(locations.competition.children)}
+                        </ul>
+                    </div>
                 </div>
                 <ul className="content">
                 {activeLocation?.children.map((item) => (

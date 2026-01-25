@@ -444,7 +444,9 @@ const WORK_LOCATION = {
       ],
     },
   ],
-};
+
+}
+
 
 const ABOUT_LOCATION = {
   id: 2,
@@ -518,30 +520,231 @@ const RESUME_LOCATION = {
   ],
 };
 
-const TRASH_LOCATION = {
+const COMPETITION_LOCATION = {
   id: 4,
   type: "competitions",
   name: "Competitions",
   icon: "/icons/trash.svg",
   kind: "folder",
   children: [
+    // ▶ Project 1
     {
-      id: 1,
-      name: "RePair.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-10 left-10",
-      imageUrl: "/images/trash-1.png",
+      id: 8,
+      name: "RePair - EcoSocial Media App",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-10 left-5", // icon position inside Finder
+      windowPosition: "top-[5vh] left-5", // optional: Finder window position
+      children: [
+        {
+          id: 1,
+          name: "RePair.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
+            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
+            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
+            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+          ],
+        },
+        {
+          id: 2,
+          name: "github.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/Avishi-Gupta/RePair",
+          position: "top-10 right-20",
+        },
+        {
+          id: 4,
+          name: "logo.png",
+          icon: "/images/wavelength.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 right-80",
+          imageUrl: "/images/wavelength.png",
+        },
+        {
+          id: 5,
+          name: "Design.fig",
+          icon: "/images/plain.png",
+          kind: "file",
+          fileType: "fig",
+          href: "https://www.figma.com/design/1UEdY9rbUhAMlUt3NCBuMG/Roomies?node-id=3-2&t=VPUuZBtwueriPdiK-1",
+          position: "top-60 right-20",
+        },
+        {
+          id: 6,
+          name: "pitch.mp4",
+          icon: "/images/thumbnail.png",
+          kind: "file",
+          fileType: "video",
+          position: "top-30 right-50",
+          videoUrl: "/videos/pitch.mp4"
+        }
+      ],
     },
+
+    // ▶ Project 2
     {
-      id: 2,
-      name: "StrideGuard.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-40 left-80",
-      imageUrl: "/images/trash-2.png",
+      id: 9,
+      name: "NUS LastBus",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-52 right-80",
+      windowPosition: "top-[20vh] left-7",
+      children: [
+        {
+          id: 1,
+          name: "NUS LastBus",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 right-10",
+          description: [
+            "llorem ipsum ildor"
+          ],
+        },
+        {
+          id: 2,
+          name: "github.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/ananyaj1515/nus-lastbus",
+          position: "top-20 left-20",
+        },
+        {
+          id: 3,
+          name: "devpost.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://devpost.com/software/nus-lastbus",
+          position: "top-5 left-25",
+        },
+        {
+          id: 4,
+          name: "cardVision.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 left-80",
+          imageUrl: "/images/project-2.png",
+        },
+        {
+          id: 5,
+          name: "Design.fig",
+          icon: "/images/plain.png",
+          kind: "file",
+          fileType: "fig",
+          href: "https://google.com",
+          position: "top-60 left-5",
+        },
+      ],
+    },
+
+    // ▶ Project 3
+    {
+      id: 9.5,
+      name: "StrideGuard - MedTech Hackathon",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-10 left-80",
+      windowPosition: "top-[33vh] left-7",
+      children: [
+        {
+          id: 1,
+          name: "Cricket Wagon Wheel Visualiser",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "lorem ipsum ildor"
+          ]
+        },
+        {
+          id: 2,
+          name: "cricket-wagon-wheel.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://ananyajain.netlify.app",
+          position: "top-10 right-20",
+        },
+        {
+          id: 4,
+          name: "cricket-wagon-wheel.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 right-80",
+          imageUrl: "/images/project-3.png",
+        },
+        {
+          id: 5,
+          name: "Design.fig",
+          icon: "/images/plain.png",
+          kind: "file",
+          fileType: "fig",
+          href: "https://google.com",
+          position: "top-60 right-20",
+        },
+      ],
+    },
+    // ▶ Project 3
+    {
+      id: 11,
+      name: "Maritime Hackathon",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-10 left-80",
+      windowPosition: "top-[33vh] left-7",
+      children: [
+        {
+          id: 1,
+          name: "Maritime Hackathon",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "lorem ipsum ildor"
+          ]
+        },
+        {
+          id: 2,
+          name: "google-colab.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://colab.research.google.com/drive/147PL-xuPa6Yi-qh5J-6Y75bgUwKcYr22?usp=sharing",
+          position: "top-10 right-20",
+        },
+        {
+          id: 4,
+          name: "cricket-wagon-wheel.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 right-80",
+          imageUrl: "/images/project-3.png",
+        },
+        {
+          id: 5,
+          name: "Design.fig",
+          icon: "/images/plain.png",
+          kind: "file",
+          fileType: "fig",
+          href: "https://google.com",
+          position: "top-60 right-20",
+        },
+      ],
     },
   ],
 };
@@ -550,7 +753,7 @@ export const locations = {
   work: WORK_LOCATION,
   about: ABOUT_LOCATION,
   resume: RESUME_LOCATION,
-  compeition: TRASH_LOCATION,
+  competition: COMPETITION_LOCATION,
 };
 
 const ME_LOCATION = {
