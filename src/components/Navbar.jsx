@@ -12,7 +12,7 @@ const Navbar = () => {
         <nav>
             <div>
                 <img src="/images/logo.svg"/>
-                <p className="font-bold">Ananya's Portfolio</p>
+                <p className="font-bold">Ananya's Desktop</p>
                 <ul>
                     {navLinks.map(({id, name, type}) => (
                         <li key={id} onClick={() => openWindow(type)}>

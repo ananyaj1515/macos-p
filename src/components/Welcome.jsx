@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react"
 import gsap from "gsap"
 import { ImageWidget, NoteWidget } from "#components"
+import { MoveDown } from "lucide-react"
+
 const FONT_WEIGHTS = {
     subtitle: {min: 100, max: 400, default: 100},
     title: {min: 400, max: 900, default: 400},
@@ -75,10 +77,11 @@ const Welcome = () => {
                     <h2 ref={subtitleRef}>
                         {renderText("Welcome to my Desktop! \n I'm", 'text-2xl font-georama bold', 100)}
                     </h2>
-                    <h1 ref={titleRef} className="mt-7"> {renderText("Ananya", "text-9xl font-georama italic")}</h1>
+                    <h1 ref={titleRef} className="mt-7"> {renderText("Ananya", "text-9xl font-georama ")}</h1>
                     <h2 className="p-10"ref={textRef}>
                         {renderText("Click the icons below to find out more", 'text-2xl font-georama', 100)}
                     </h2>
+                    <MoveDown/>
                     
                     <div className="small-screen">
                         <p>This portfolio is designed for desktop/tablet sreens only!</p>
