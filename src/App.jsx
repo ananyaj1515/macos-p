@@ -10,7 +10,9 @@ const App  = () => {
   return (
     <main>
       <LiquidGradientBackground />
+      
       <Navbar></Navbar>
+     
       <Welcome></Welcome>
       <Dock></Dock>
       <Terminal/>

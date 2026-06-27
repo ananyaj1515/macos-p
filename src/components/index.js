@@ -3,4 +3,6 @@ import Welcome from "./Welcome";
 import Dock from "./Dock";
 import WindowControls from "./WindowControls";
 import LiquidGradientBackground from "./LiquidGradientBackground";
-export {Navbar, Welcome, Dock, WindowControls, LiquidGradientBackground}
+import ImageWidget from "./ImageWidget";
+import NoteWidget from "./NoteWidget";
+export {Navbar, Welcome, Dock, WindowControls, LiquidGradientBackground, ImageWidget, NoteWidget}

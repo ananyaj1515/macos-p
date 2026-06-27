@@ -1,6 +1,6 @@
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 import gsap from "gsap"
-import { useGSAP } from "@gsap/react"
+import { ImageWidget, NoteWidget } from "#components"
 const FONT_WEIGHTS = {
     subtitle: {min: 100, max: 400, default: 100},
     title: {min: 400, max: 900, default: 400},
@@ -55,7 +55,7 @@ const Welcome = () => {
     const subtitleRef = useRef(null);
     const textRef = useRef(null);
       
-    useGSAP(() => {
+    useEffect(() => {
         const titleCleanup = setupTextHover(titleRef.current, 'title')
         const subtitleCleanup = setupTextHover(subtitleRef.current, 'subtitle')
         const textCleanup = setupTextHover(textRef.current, 'text')
@@ -67,18 +67,29 @@ const Welcome = () => {
         }
     }, [])
 
-    return <section id="welcome">
-        <h2 ref={subtitleRef}>
-            {renderText("Hey, I'm Ananya! Welcome to my", 'text-2xl font-georama', 100)}
-        </h2>
-        <h1 ref={titleRef} className="mt-7"> {renderText("portfolio", "text-9xl font-georama italic")}</h1>
-        <h2 className="p-10"ref={textRef}>
-            {renderText("Click the icons below to find out more!", 'text-2xl font-georama', 100)}
-        </h2>
-        <div className="small-screen">
-            <p>This portfolio is designed for desktop/tablet sreens only!</p>
-        </div>
-    </section>
+    return (
+    <div className="flex min-h-screen items-start justify-center px-10 pt-40">
+            <div className="flex w-full max-w-7xl items-start justify-between gap-20">
+                <ImageWidget />
+                <section id="welcome" className="flex-1 text-center">
+                    <h2 ref={subtitleRef}>
+                        {renderText("Welcome to my Desktop! \n I'm", 'text-2xl font-georama', 100)}
+                    </h2>
+                    <h1 ref={titleRef} className="mt-7"> {renderText("Ananya", "text-9xl font-georama italic")}</h1>
+                    <h2 className="p-10"ref={textRef}>
+                        {renderText("Click the icons below to find out more", 'text-2xl font-georama', 100)}
+                    </h2>
+                    
+                    <div className="small-screen">
+                        <p>This portfolio is designed for desktop/tablet sreens only!</p>
+                    </div>
+                    
+                </section>
+                <NoteWidget/>
+            </div>
+    </div>
+    )
+
 }
 
 export default Welcome
