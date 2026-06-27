@@ -109,7 +109,7 @@ body {
     @apply relative flex flex-col gap-4 p-5;
     padding-top: clamp(1rem, 3vh, 2.5rem);
     padding-bottom: clamp(2rem, 6vh, 4rem);
-    max-width: min(22rem, 24vw);
+    max-width: min(22rem, 35vw);
   }
 
   #window-controls {
