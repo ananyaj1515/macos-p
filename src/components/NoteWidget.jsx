@@ -14,7 +14,7 @@ const NoteWidget = () => {
             </div>
             
             <div className='flex flex-row align-middle'>
-              <GraduationCap size={30}/>
+              <GraduationCap size={35}/>
               <div className="font-mono pl-5 flex flex-col">
                 <p>Computer Science & Entrepreneurship @ NUS </p>
                 <p>Class of 2028</p>
