@@ -84,7 +84,7 @@ const Welcome = () => {
                     <MoveDown/>
                     
                     <div className="small-screen">
-                        <p>This portfolio is designed for desktop/tablet sreens only!</p>
+                        <p>This portfolio is designed for desktop/tablet screens only!</p>
                     </div>
                     
                 </section>
