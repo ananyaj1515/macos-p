@@ -12,7 +12,6 @@ const App  = () => {
       <LiquidGradientBackground />
       
       <Navbar></Navbar>
-  
       <Widget/>
       <Welcome></Welcome>
       <Dock></Dock>

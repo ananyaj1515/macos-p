@@ -19,6 +19,11 @@ body {
   --breakpoint-3xl: 1920px;
 }
 
+:root {
+  --dock-bottom-offset: clamp(1rem, 2vh, 1.75rem);
+  --dock-safe-area: clamp(6rem, 12vh, 9rem);
+}
+
 @utility flex-center {
   @apply flex items-center justify-center;
 }
@@ -34,6 +39,7 @@ body {
 @layer base {
   main {
     @apply w-dvw h-dvh overflow-hidden;
+    padding-bottom: var(--dock-safe-area);
   }
 
   nav {
@@ -79,7 +85,8 @@ body {
   }
 
   #dock {
-    @apply absolute bottom-6 left-1/2 -translate-x-1/2 z-50 select-none max-sm:hidden;
+    @apply absolute left-1/2 -translate-x-1/2 z-50 select-none max-sm:hidden;
+    bottom: var(--dock-bottom-offset);
 
     .dock-container {
       @apply bg-white/20 backdrop-blur-md justify-between rounded-3xl p-2 flex items-end gap-1.5;
@@ -96,6 +103,13 @@ body {
         @apply object-cover object-center;
       }
     }
+  }
+
+  .widget-stack {
+    @apply relative flex flex-col gap-4 p-5;
+    padding-top: clamp(1rem, 3vh, 2.5rem);
+    padding-bottom: clamp(2rem, 6vh, 4rem);
+    max-width: min(22rem, 24vw);
   }
 
   #window-controls {
