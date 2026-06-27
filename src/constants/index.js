@@ -46,7 +46,7 @@ const dockApps = [
   },
   {
     id: "safari",
-    name: "Articles", // was "Safari"
+    name: "Projects", // was "Safari"
     icon: "safari.png",
     canOpen: true,
   },
@@ -79,6 +79,13 @@ const dockApps = [
     name: "Timeline",
     icon: "calendar.png",
     canOpen: true,
+  },
+  {
+    id: "github",
+    name: "GitHub",
+    icon: "github.png",
+    canOpen: true,
+    link: "https://github.com/ananyaj1515"
   }
 ];
 

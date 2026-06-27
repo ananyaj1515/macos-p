@@ -53,9 +53,18 @@ const Dock = () => {
     }, [])
 
     const toggleApp = (app) => {
-        if(!app.canOpen) {
+        if (app.link) {
+            const newWindow = window.open(app.link, "_blank", "noopener,noreferrer")
+            if (!newWindow) {
+                window.location.href = app.link
+            }
             return
         }
+
+        if (!app.canOpen) {
+            return
+        }
+
         const window = windows[app.id]
         if (!window) {
             console.error(`Window not found for id: ${app.id}`)
@@ -73,19 +82,42 @@ const Dock = () => {
     return (
         <section id="dock">
             <div ref ={dockRef} className="dock-container">
-                {dockApps.map(({id, name, icon, canOpen}) => (
+                {dockApps.map(({id, name, icon, canOpen, link}) => (
                     <div key={id} className="relative flex justify-center">
-                        <button type="button" className="dock-icon" aria-label={name}
-                            data-tooltip-id="dock-tooltip"
-                            data-tooltip-content={name}
-                            data-tooltip-delay-show={150}
-                            disabled={!canOpen}
-                            onClick={() => toggleApp({id, canOpen})}>
+                        {link ? (
+                            <a
+                                href={link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="dock-icon block"
+                                aria-label={name}
+                                data-tooltip-id="dock-tooltip"
+                                data-tooltip-content={name}
+                                data-tooltip-delay-show={150}
+                                onClick={(event) => {
+                                    event.preventDefault()
+                                    toggleApp({id, canOpen, link})
+                                }}
+                            >
                                 <img src={`/images/${icon}`}
                                     alt={name}
                                     loading="lazy"
-                                    className={canOpen ? '' : 'opacity-60'}></img>
-                        </button>
+                                    className="w-full h-full object-cover object-center"
+                                />
+                            </a>
+                        ) : (
+                            <button type="button" className="dock-icon" aria-label={name}
+                                data-tooltip-id="dock-tooltip"
+                                data-tooltip-content={name}
+                                data-tooltip-delay-show={150}
+                                disabled={!canOpen}
+                                onClick={() => toggleApp({id, canOpen, link})}>
+                                    <img src={`/images/${icon}`}
+                                        alt={name}
+                                        loading="lazy"
+                                        className={canOpen ? '' : 'opacity-60'}></img>
+                            </button>
+                        )}
                     </div>
                 ))}
                 <Tooltip id="dock-tooltip" place="top" className="tooltip"></Tooltip>
