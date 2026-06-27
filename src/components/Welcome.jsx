@@ -72,7 +72,7 @@ const Welcome = () => {
     return (
     <div className="flex min-h-screen items-start justify-center px-10 pt-40">
             <div className="flex w-full max-w-7xl items-start justify-between gap-20">
-                <ImageWidget />
+               
                 <section id="welcome" className="flex-1 text-center">
                     <h2 ref={subtitleRef}>
                         {renderText("Welcome to my Desktop! \n I'm", 'text-2xl font-georama bold', 100)}
@@ -88,7 +88,7 @@ const Welcome = () => {
                     </div>
                     
                 </section>
-                <NoteWidget/>
+               
             </div>
     </div>
     )

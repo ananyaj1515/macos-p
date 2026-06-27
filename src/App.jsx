@@ -1,4 +1,4 @@
-import { Navbar, Welcome, Dock, LiquidGradientBackground } from "#components";
+import { Navbar, Welcome, Dock, LiquidGradientBackground, Widget } from "#components";
 import { Safari, Terminal, Resume, Finder, Text, Image, Contact, Video, Photos, } from "#windows";
 import gsap from "gsap";
 import { Draggable } from "gsap/Draggable";
@@ -12,7 +12,8 @@ const App  = () => {
       <LiquidGradientBackground />
       
       <Navbar></Navbar>
-     
+  
+      <Widget/>
       <Welcome></Welcome>
       <Dock></Dock>
       <Terminal/>

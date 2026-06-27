@@ -5,4 +5,5 @@ import WindowControls from "./WindowControls";
 import LiquidGradientBackground from "./LiquidGradientBackground";
 import ImageWidget from "./ImageWidget";
 import NoteWidget from "./NoteWidget";
-export {Navbar, Welcome, Dock, WindowControls, LiquidGradientBackground, ImageWidget, NoteWidget}
+import Widget from "./Widget";
+export {Navbar, Welcome, Dock, WindowControls, LiquidGradientBackground, ImageWidget, NoteWidget, Widget}

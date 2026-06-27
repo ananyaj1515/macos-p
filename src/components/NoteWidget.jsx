@@ -1,10 +1,10 @@
 import { GraduationCap, Laptop, BookOpenCheck} from 'lucide-react';
-import WidgetWrapper from "./hoc/WidgetWrapper";
 
 const NoteWidget = () => {
   return (
-    <WidgetWrapper>
-        <div className=" bg-[#f3ec9aa6] w-full h-full overflow-hidden p-5 border-4 border-[#b5952a4e]">
+
+      <div className="z-40 flex h-90 w-90 items-center justify-center overflow-hidden rounded-[2rem] bg-white/20 shadow-[0_10px_30px_rgba(0,0,0,0.4)] backdrop-blur-3xl ${className text-white">
+        <div className="  w-full h-full overflow-hidden p-5 ">
           <div className="flex flex-col justify-between gap-5">
               
                    
@@ -37,7 +37,8 @@ const NoteWidget = () => {
                 
           </div>
         </div>
-    </WidgetWrapper>
+      </div>
+    
   );
 };
 
