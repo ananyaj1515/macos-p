@@ -73,7 +73,7 @@ const Welcome = () => {
                 <ImageWidget />
                 <section id="welcome" className="flex-1 text-center">
                     <h2 ref={subtitleRef}>
-                        {renderText("Welcome to my Desktop! \n I'm", 'text-2xl font-georama', 100)}
+                        {renderText("Welcome to my Desktop! \n I'm", 'text-2xl font-georama bold', 100)}
                     </h2>
                     <h1 ref={titleRef} className="mt-7"> {renderText("Ananya", "text-9xl font-georama italic")}</h1>
                     <h2 className="p-10"ref={textRef}>

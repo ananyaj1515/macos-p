@@ -53,14 +53,6 @@ const Dock = () => {
     }, [])
 
     const toggleApp = (app) => {
-        if (app.link) {
-            const newWindow = window.open(app.link, "_blank", "noopener,noreferrer")
-            if (!newWindow) {
-                window.location.href = app.link
-            }
-            return
-        }
-
         if (!app.canOpen) {
             return
         }
@@ -94,10 +86,6 @@ const Dock = () => {
                                 data-tooltip-id="dock-tooltip"
                                 data-tooltip-content={name}
                                 data-tooltip-delay-show={150}
-                                onClick={(event) => {
-                                    event.preventDefault()
-                                    toggleApp({id, canOpen, link})
-                                }}
                             >
                                 <img src={`/images/${icon}`}
                                     alt={name}

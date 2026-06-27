@@ -115,7 +115,7 @@ const LiquidGradientBackground = () => {
           uColor4: { value: new THREE.Vector3(0.039, 0.055, 0.153) },
           uColor5: { value: new THREE.Vector3(0.945, 0.353, 0.133) },
           uColor6: { value: new THREE.Vector3(0.039, 0.055, 0.153) },
-          uSpeed: { value: 1.5 },
+          uSpeed: { value: 2.5 },
           uIntensity: { value: 1.8 },
           uTouchTexture: { value: null },
           uGrainIntensity: { value: 0.08 },
