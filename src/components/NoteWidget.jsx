@@ -9,7 +9,7 @@ const NoteWidget = () => {
               
                    
             <div>
-              <h1 className="font-roboto text-lg sm:text-2xl">About Me</h1>
+              <h1 className="font-roboto text-lg sm:text-xl">About Me</h1>
               <h1>---------</h1>
             </div>
             
