@@ -2,10 +2,12 @@ import WidgetWrapper from "./hoc/WidgetWrapper";
 
 const NoteWidget = () => {
   return (
-    <WidgetWrapper className="p-6">
-      <div className="h-full w-full bg-amber-200">
-        <h1>Computer Science Student @ NUS</h1>
-      </div>
+    <WidgetWrapper>
+        <div className=" bg-amber-200 w-full h-full overflow-hidden p-5 border border-5 border-amber-300">
+            <h1 className="font-mono">
+                Computer Science Student @ NUS
+            </h1>
+        </div>
     </WidgetWrapper>
   );
 };

@@ -1,6 +1,6 @@
 import WidgetWrapper from "./hoc/WidgetWrapper";
 
-const ImageWidget = ({ photoSrc = "/images/ananya.jpg", alt = "Ananya" }) => {
+const ImageWidget = ({ photoSrc = "/images/ananya-2.jpg", alt = "Ananya" }) => {
   return (
     <WidgetWrapper>
       <img
