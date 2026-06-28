@@ -1,9 +1,15 @@
 import { WindowControls, ProjectCard } from "#components"
 import WindowWrapper from "#components/hoc/WindowWrapper"
-import { blogPosts } from "#constants"
+import useWindowStore from "#store/window"
 import { ChevronLeft, ChevronRight, PanelLeft, SearchIcon, Share, ShieldHalf, Plus, Copy, MoveRight } from "lucide-react"
 
 const Safari = () => {
+    const {openWindow} = useWindowStore()
+
+    const openVideo = (item => {
+        return openWindow('video', item)
+    })
+
     return (
         <>
             <div id="window-header">
@@ -36,9 +42,16 @@ const Safari = () => {
             description="A cross-platform co-living app that helps housemates stay organized and in sync. Track chores, split expenses, manage groceries, handle guests, plan activities, and coordinate schedules, all in one shared space."
             src="/images/wavelength-preview.png"
             tech={["React Native", "Typescript", "TailwindCSS", "Expo", "Appwrite", "TanStack Query"]}
-            onClick={() =>
-                window.open("https://github.com/Project-Sothea", "_blank", "noopener,noreferrer")
-            }
+            onClick={() => {
+                openWindow("video", {id: 1,
+          name: "pitch.mp4",
+          icon: "/images/thumbnail.png",
+          kind: "file",
+          fileType: "video",
+          position: "top-30 right-50",
+          videoUrl: "/videos/pitch.mp4"
+            })}
+    }
         />
 
         <ProjectCard
