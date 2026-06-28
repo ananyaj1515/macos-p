@@ -35,7 +35,7 @@ const Contact = () => {
         <>
             <div id="window-header">
                 <WindowControls target='contact'/>
-                <h2>Contact Me</h2>
+                <h2>Contact</h2>
             </div>
             <div className="p-5 space-y-5 bg-black">
                 <div className="flex items-center gap-6">
@@ -61,11 +61,12 @@ const Contact = () => {
                     ))}
                 </ul>
                 <hr style={{ border: '0', height: '1px', backgroundColor: '#ccc', margin: '20px 0' }} />
+                <h3 className="text-white align-middle">Random Facts</h3>
                 <ul className="grid grid-cols-1">
                     {funFacts.map(({id, icon: Icon, value, color}) => (
                         <li key={id} style={{backgroundColor: color}} className="flex flex-row justify-between gap-3 w-full h-full">
                             <Icon size={20} color="white"/>
-                            <p >{value}</p>
+                            <p>{value}</p>
                         </li>
                     ))}
                 </ul>
