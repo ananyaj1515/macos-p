@@ -28,16 +28,62 @@ const Safari = () => {
                     <Copy className="icon"/>
                 </div>
             </div>
-            <div className="blog">
-               
-                <ProjectCard
-                    title="MIDI Waterfall"
-                    description="Summarises long email threads into actionable insights."
-                    src="/images/midi-roll.png"
-                    tech={["React", "Node", "OpenAI"]}
-                    onClick={() => {}}
-                    />
-            </div>
+            <div className="safari-body">
+    <div className="safari-grid">
+
+        <ProjectCard
+            title="Wavelength"
+            description="Summarises long email threads into actionable insights."
+            src="/images/wavelength-preview.png"
+            tech={["React", "Node", "OpenAI"]}
+            onClick={() =>
+                window.open("https://github.com/Project-Sothea", "_blank", "noopener,noreferrer")
+            }
+        />
+
+        <ProjectCard
+            title="MIDI Waterfall"
+            description="Summarises long email threads into actionable insights."
+            src="/images/midi-roll.png"
+            tech={["React", "Node", "OpenAI"]}
+            onClick={() =>
+                window.open("https://github.com/ananyaj1515/midi-roll", "_blank", "noopener,noreferrer")
+            }
+        />
+
+        <ProjectCard
+            title="Project Sothea"
+            description="Summarises long email threads into actionable insights."
+            src="/images/sothea.png"
+            tech={["React", "Node", "OpenAI"]}
+            onClick={() =>
+                window.open("https://github.com/Project-Sothea", "_blank", "noopener,noreferrer")
+            }
+        />
+
+        <ProjectCard
+            title="Project Sothea"
+            description="Summarises long email threads into actionable insights."
+            src="/images/sothea.png"
+            tech={["React", "Node", "OpenAI"]}
+            onClick={() =>
+                window.open("https://github.com/Project-Sothea", "_blank", "noopener,noreferrer")
+            }
+        />
+
+<ProjectCard
+            title="Project Sothea"
+            description="Summarises long email threads into actionable insights."
+            src="/images/sothea.png"
+            tech={["React", "Node", "OpenAI"]}
+            onClick={() =>
+                window.open("https://github.com/Project-Sothea", "_blank", "noopener,noreferrer")
+            }
+        />
+
+
+    </div>
+</div>
         </>
     )
 }
