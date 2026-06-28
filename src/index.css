@@ -107,10 +107,14 @@ body {
 
   .widget-stack {
   @apply fixed left-6 z-30 flex flex-col gap-4 max-sm:hidden;
-  width: clamp(160px, 18vw, 300px);
+  width: clamp(180px, 18vw, 300px);
   top: calc(var(--nav-height, 3.5rem) + 1rem);
   bottom: calc(var(--dock-bottom-offset) + 6rem);
+
+  @media (min-width: 640px) and (max-width: 1024px) {
+    width: clamp(220px, 26vw, 360px);
   }
+}
 
   #window-controls {
     @apply flex gap-2;

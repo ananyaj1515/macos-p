@@ -5,17 +5,16 @@ const NoteWidget = () => {
 
       <div className="z-40 flex-1 w-full h-full items-center justify-center overflow-hidden rounded-[2rem] bg-white/20 shadow-[0_10px_30px_rgba(0,0,0,0.4)] backdrop-blur-3xl transition-transform duration-300 group-hover:scale-102 text-white flex flex-wrap">
         <div className="w-full h-full overflow-hidden p-3 sm:p-5">
-          <div className="flex flex-col justify-between gap-3 sm:gap-5"> 
+          <div className="flex flex-col justify-between gap-2 sm:gap-3"> 
             <div>
-              <h1 className="font-roboto text-sm sm:text-lg">About Me</h1>
-              <h1>---------</h1>
+              <p className="font-roboto text-xs sm:text-lg">About Me</p>
+              
             </div>
             
             <div className='flex flex-row align-middle'>
               <GraduationCap size={35}/>
-              <div className="font-mono pl-3 sm:pl-5 flex flex-col text-[0.72rem] sm:text-sm">
-                <p className="leading-tight">Computer Science & Entrepreneurship @ NUS </p>
-                <p className="leading-tight">Class of 2028</p>
+              <div className="font-mono pl-3 sm:pl-5 flex flex-col text-[0.70rem] sm:text-sm">
+                <p className="leading-tight">Computer Science & Entrepreneurship @ NUS'28 </p>
               </div>
             </div>
 
@@ -29,10 +28,9 @@ const NoteWidget = () => {
                 <div className='flex flex-row align-middle'>
                   <BookOpenCheck size={30}/>
                   <div className="font-mono pl-3 sm:pl-5 flex flex-col text-[0.72rem] sm:text-sm">
-                    <p className="leading-tight">Currently learning: .NET, C# & Langchain </p>
+                    <p className="leading-tight">Currently learning: .NET, C# & LangChain </p>
                   </div>
                 </div>
-                
           </div>
         </div>
       </div>
