@@ -8,5 +8,6 @@ import NoteWidget from "./NoteWidget";
 import Widget from "./Widget";
 import TimelineItem from "./TimelineItem";
 import TimelineSection from "./TimelineSection";
+import ProjectCard from "./ProjectCard";
 
-export {Navbar, Welcome, Dock, WindowControls, LiquidGradientBackground, ImageWidget, NoteWidget, Widget, TimelineItem, TimelineSection}
+export {Navbar, Welcome, Dock, WindowControls, LiquidGradientBackground, ImageWidget, NoteWidget, Widget, TimelineItem, TimelineSection, ProjectCard}

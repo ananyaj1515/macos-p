@@ -3,7 +3,7 @@ import { GraduationCap, Laptop, BookOpenCheck} from 'lucide-react';
 const NoteWidget = () => {
   return (
 
-      <div className="z-40 flex-1 w-full h-full items-center justify-center overflow-hidden rounded-[2rem] bg-white/20 shadow-[0_10px_30px_rgba(0,0,0,0.4)] backdrop-blur-3xl transition-transform duration-300 group-hover:scale-102 text-white flex flex-wrap">
+      <div className="z-40 flex-1 w-full h-full items-center justify-center overflow-hidden rounded-4xl bg-white/20 shadow-[0_10px_30px_rgba(0,0,0,0.4)] backdrop-blur-3xl transition-transform duration-300 group-hover:scale-102 text-white flex flex-wrap">
         <div className="w-full h-full overflow-hidden p-3 sm:p-5">
           <div className="flex flex-col justify-between gap-2 sm:gap-3"> 
             <div>

@@ -1,4 +1,4 @@
-import { WindowControls } from "#components"
+import { WindowControls, ProjectCard } from "#components"
 import WindowWrapper from "#components/hoc/WindowWrapper"
 import { blogPosts } from "#constants"
 import { ChevronLeft, ChevronRight, PanelLeft, SearchIcon, Share, ShieldHalf, Plus, Copy, MoveRight } from "lucide-react"
@@ -30,22 +30,13 @@ const Safari = () => {
             </div>
             <div className="blog">
                
-                <div className="space-y-8">
-                    {blogPosts.map(({id, image, title, date, link}) => (
-                        <div key={id} className="blog-post">
-                            <div className="col-span-2">
-                                <img src={image} alt={title}/>
-                            </div>
-                            <div className="content">
-                                <p>{date}</p>
-                                <h3>{title}</h3>
-                                <a href={link} target="_blank" rel="noopener noreferrer">Checkout the full post
-                                    <MoveRight className="icon-hover"/>
-                                </a>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+                <ProjectCard
+                    title="MIDI Waterfall"
+                    description="Summarises long email threads into actionable insights."
+                    src="/images/midi-roll.png"
+                    tech={["React", "Node", "OpenAI"]}
+                    onClick={() => {}}
+                    />
             </div>
         </>
     )
