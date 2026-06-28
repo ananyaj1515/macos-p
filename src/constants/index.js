@@ -162,6 +162,7 @@ const socials = [
   },
 ];
 
+
 const photosLinks = [
   {
     id: 1,

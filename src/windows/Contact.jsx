@@ -1,6 +1,34 @@
 import { WindowControls } from "#components"
 import WindowWrapper from "#components/hoc/WindowWrapper"
 import { socials } from "#constants"
+import { Camera, CookingPot, Brush, Moon } from "lucide-react"
+
+const funFacts = [
+    {
+        id: 1,
+        icon: Camera,
+        value: "Always documenting life with my DigiCam",
+        color: "#f17170"
+    },
+    {
+        id: 2,
+        icon: CookingPot,
+        value: "Cooking random cravings during evenings",
+        color: "#a1727a"
+    },
+    {
+        id: 3,
+        icon: Brush,
+        value: "Making random voxel art on Blender",
+        color: "#7a3948"
+    },
+    {
+        id: 4,
+        icon: Moon,
+        value: "Dark mode always ON",
+        color: "#2f1d20"
+    }
+]
 
 const Contact = () => {
     return (
@@ -29,6 +57,15 @@ const Contact = () => {
                                 </img>
                                 <p>{text}</p>
                             </a>
+                        </li>
+                    ))}
+                </ul>
+                <hr style={{ border: '0', height: '1px', backgroundColor: '#ccc', margin: '20px 0' }} />
+                <ul className="grid grid-cols-1">
+                    {funFacts.map(({id, icon: Icon, value, color}) => (
+                        <li key={id} style={{backgroundColor: color}} className="flex flex-row justify-between gap-3 w-full h-full">
+                            <Icon size={20} color="white"/>
+                            <p >{value}</p>
                         </li>
                     ))}
                 </ul>
