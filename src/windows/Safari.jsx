@@ -19,7 +19,7 @@ const Safari = () => {
                         <SearchIcon className="icon">
 
                         </SearchIcon>
-                        <input type='text' placeholder="search or enter website name" className="flex-1"/>
+                        <input type='text' placeholder="https://www.ananyajain/projects" className="flex-1"/>
                     </div>
                 </div>
                 <div className="flex items-center gap-5">
@@ -29,7 +29,7 @@ const Safari = () => {
                 </div>
             </div>
             <div className="blog">
-                <h2>My Developer Blog</h2>
+               
                 <div className="space-y-8">
                     {blogPosts.map(({id, image, title, date, link}) => (
                         <div key={id} className="blog-post">
