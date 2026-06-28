@@ -325,15 +325,109 @@ body {
   }
 
   #calendar {
-    @apply w-[min(100vw,50rem)] absolute top-24 left-1/2 -translate-x-1/2 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden text-gray-800;
+    @apply w-[min(100vw,44rem)] absolute top-24 left-1/2 -translate-x-1/2 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden text-gray-800;
+    max-height: min(80vh, 42rem);
 
     .calendar-body {
-      @apply p-6 bg-[#1d2021]
+      @apply p-6 space-y-6 bg-[#1d2021] overflow-y-auto;
+      max-height: calc(min(80vh, 42rem) - 3rem);
     }
+
+    .calendar-intro {
+      @apply space-y-2;
+
+      .calendar-eyebrow {
+        @apply text-[10px] font-semibold uppercase tracking-[0.28em] text-gray-500;
+      }
+
+      h3 {
+        @apply text-xl font-semibold text-white;
+      }
+
+      p {
+        @apply text-sm text-gray-600;
+      }
+    }
+
+    .timeline-section {
+      @apply space-y-4;
+
+      .timeline-section-title {
+        @apply text-sm font-semibold uppercase tracking-[0.24em] text-white;
+      }
+    }
+
+    .timeline-list {
+      @apply relative space-y-4 border-l border-gray-200 pl-5;
+    }
+
+    .timeline-item {
+      @apply relative;
+    }
+
+    .timeline-dot {
+      @apply absolute -left-[1.4rem] top-3 size-3 rounded-full ring-4 ring-blue-600;
+    }
+
+    .timeline-content {
+      @apply rounded-3xl border p-5 shadow-lg ;
+    }
+
+    .timeline-header {
+      @apply mb-3 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between;
+    }
+
+    .timeline-title {
+      @apply text-lg font-semibold text-[#d10c82];
+    }
+
+    .timeline-company {
+      @apply mt-1 text-sm font-medium text-white;
+    }
+
+    .timeline-year {
+      @apply whitespace-nowrap rounded-full border border-slate-200 bg-slate-100 px-3 py-1 text-xs font-semibold text-white;
+    }
+
+    .timeline-meta-row {
+      @apply mb-4 flex flex-wrap gap-2;
+    }
+
+    .timeline-meta-pill {
+      @apply inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-600;
+    }
+
+    .timeline-description {
+      @apply text-sm leading-6 text-white;
+    }
+
+    .timeline-highlights {
+      @apply mt-4 space-y-2 text-sm text-white;
+
+      li {
+        @apply list-disc pl-4;
+      }
+    }
+
+    .timeline-stack {
+      @apply mt-4 rounded-2xl border border-slate-200 bg-slate-300 p-4;
+    }
+
+    .timeline-stack-label {
+      @apply mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500;
+    }
+
+    .stack-list {
+      @apply flex flex-wrap gap-2;
+    }
+
+    .stack-pill {
+      @apply rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700 shadow-sm;
+    }
+
     h2 {
       @apply font-bold text-sm text-center w-full;
     }
-    
   }
 
   #finder,
