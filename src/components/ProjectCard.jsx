@@ -2,10 +2,10 @@ import { ArrowUpRight } from "lucide-react";
 const ProjectCard = ({ title, description, tech, src, onClick }) => {
   return (
     <div className="project-card" onClick={onClick}>
-      <div className="project-card-header flex flex-row">
+      <div className="project-card-header">
 
-        <h3 className="text-white text-xl">{title}</h3>
-        <ArrowUpRight size={20} color="white" className="flex-1 items-end"/>
+        <h3>{title}</h3>
+        <ArrowUpRight size={20}/>
       </div>
       <img src={src} className="w-full h-full"/>
 

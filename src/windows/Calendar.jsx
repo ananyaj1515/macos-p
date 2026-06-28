@@ -4,11 +4,11 @@ import WindowWrapper from "#components/hoc/WindowWrapper"
 const experience = [
   {
     year: "May 2026 - August 2026",
-    company: "Sonicboom Solutions Sdn Bhd, Kuala Lampur, Malayasia",
+    company: "Sonicboom Solutions Sdn Bhd",
     title: "Software Engineer Intern",
     highlights: ["Built user-facing features", "Worked across frontend and backend", "Improved performance and reliability"],
-    stack: ["React", "TypeScript", "Tailwind", "Node.js"],
-    location: "Kuala Lumpur",
+    stack: [".NET", "C#", "SQL Server", "WPF", "AvaloniaUI", "PowerShell", "XAML", "HTML", "CSS"],
+    location: "Kuala Lumpur, Malayasia",
     backgroundColor: "#ff6b8b"
   },
   {
@@ -16,7 +16,7 @@ const experience = [
     company: "National Universit of Singapore, School of Computing",
     title: "Teaching Assistant - CS2030S (Programming Methodology II)",
     highlights: ["Developed interactive prototypes", "Collaborated with design and product teams", "Shipped polished experiences"],
-    stack: ["Java", "JUnit", "Git", "VS Code"],
+    stack: ["Java", "Vim"],
     location: "Singapore",
     backgroundColor: "#ff6b8b"
   },
