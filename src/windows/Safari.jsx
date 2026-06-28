@@ -33,9 +33,9 @@ const Safari = () => {
 
         <ProjectCard
             title="Wavelength"
-            description="Summarises long email threads into actionable insights."
+            description="A cross-platform co-living app that helps housemates stay organized and in sync. Track chores, split expenses, manage groceries, handle guests, plan activities, and coordinate schedules, all in one shared space."
             src="/images/wavelength-preview.png"
-            tech={["React", "Node", "OpenAI"]}
+            tech={["React Native", "Typescript", "TailwindCSS", "Expo", "Appwrite", "TanStack Query"]}
             onClick={() =>
                 window.open("https://github.com/Project-Sothea", "_blank", "noopener,noreferrer")
             }
@@ -43,9 +43,9 @@ const Safari = () => {
 
         <ProjectCard
             title="MIDI Waterfall"
-            description="Summarises long email threads into actionable insights."
+            description="A terminal-based MIDI visualizer written in Rust that turns .mid files into a Synthesia-style falling note waterfall with a live piano keyboard in your terminal. No audio setup required, just run it and watch the notes play out visually"
             src="/images/midi-roll.png"
-            tech={["React", "Node", "OpenAI"]}
+            tech={["Rust"]}
             onClick={() =>
                 window.open("https://github.com/ananyaj1515/midi-roll", "_blank", "noopener,noreferrer")
             }
@@ -61,26 +61,59 @@ const Safari = () => {
             }
         />
 
+
         <ProjectCard
-            title="Project Sothea"
-            description="Summarises long email threads into actionable insights."
-            src="/images/sothea.png"
-            tech={["React", "Node", "OpenAI"]}
+            title="NUS LastBus"
+            description="2D platformer inspired by everyday life at NUS: Navigate iconic hills, dodge rage-inducing obstacles like FASS chickens and the Bell Curve God, and see if you can survive to catch the last bus home"
+            src="/images/nus-lastbus.png"
+            tech={["Unity", "C#"]}
             onClick={() =>
-                window.open("https://github.com/Project-Sothea", "_blank", "noopener,noreferrer")
+                window.open("https://devpost.com/software/nus-lastbus", "_blank", "noopener,noreferrer")
             }
         />
 
-<ProjectCard
-            title="Project Sothea"
-            description="Summarises long email threads into actionable insights."
-            src="/images/sothea.png"
+        <ProjectCard
+            title="RePair"
+            description="A sustainability-focused social media platform that promotes eco-friendly habits and a circular way of living. Discover nearby repair specialists and small businesses to fix, reuse, and extend the life of everyday items instead of replacing"
+            src="/images/repair.png"
             tech={["React", "Node", "OpenAI"]}
             onClick={() =>
-                window.open("https://github.com/Project-Sothea", "_blank", "noopener,noreferrer")
+                window.open("https://github.com/Avishi-Gupta/RePair", "_blank", "noopener,noreferrer")
             }
         />
 
+        <ProjectCard
+            title="Hall Ledger"
+            description="Desktop application designed for Resident Assistants to keep hall administration organized and efficient. Manage resident profiles, track remarks and demerits, and quickly find information through a keyboard-first workflow"
+            src="/images/hall-legder.png"
+            tech={["Java", "JavaFX", "JUnit", "Gradle"]}
+            onClick={() =>
+                window.open("https://ay2526s2-cs2103t-t15-1.github.io/tp/index.html", "_blank", "noopener,noreferrer")
+            }
+        />
+
+        <ProjectCard
+            title="Astrid Sees"
+            description="Astrid is an astrology-obsssed task management CATbot. She helps you organize todos, deadlines, and events through a fun conversational interface that makes staying productive a little less mundane"
+            src="/images/astrid.png"
+            tech={["Java", "JUnit", "Gradle", "JavaFX"]}
+            onClick={() =>
+                window.open("https://ananyaj1515.github.io/ip/", "_blank", "noopener,noreferrer")
+            }
+        />
+
+         <ProjectCard
+            title="Course Review Summarizer"
+            description={"Work In Progress...\nAI-powered course review dashboard, transforming lengthy student reviews into concise, actionable insights. Search module to quickly grasp workload, praises & complaints"}
+            src="/images/loading.png"
+            tech={["FastAPI", "Next.js", "PostgresSQL", "OpenAI API"]}
+            onClick={() =>
+                window.open("https://ay2526s2-cs2103t-t15-1.github.io/tp/index.html", "_blank", "noopener,noreferrer")
+            }
+        />
+
+
+    
 
     </div>
 </div>

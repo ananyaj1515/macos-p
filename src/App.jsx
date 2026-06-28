@@ -18,7 +18,7 @@ const App  = () => {
       <Terminal/>
       <Safari/>
       <Resume/>
-      <Finder/>
+      {/* <Finder/> */}
       <Text/>
       <Image/>
       <Contact/>

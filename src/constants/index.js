@@ -38,12 +38,12 @@ const navIcons = [
 ];
 
 const dockApps = [
-  {
-    id: "finder",
-    name: "Portfolio", // was "Finder"
-    icon: "finder.png",
-    canOpen: true,
-  },
+  // {
+  //   id: "finder",
+  //   name: "Portfolio", // was "Finder"
+  //   icon: "finder.png",
+  //   canOpen: true,
+  // },
   {
     id: "safari",
     name: "Projects", // was "Safari"
@@ -86,7 +86,14 @@ const dockApps = [
     icon: "github.png",
     canOpen: true,
     link: "https://github.com/ananyaj1515"
-  }
+  },
+  // {
+  //   id: "linkedin",
+  //   name: "LinkedIn",
+  //   icon: "linkedin.png",
+  //   canOpen: true,
+  //   link: "www.linkedin.com/in/ananyaj1515"
+  
 ];
 
 const blogPosts = [

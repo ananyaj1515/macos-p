@@ -15,7 +15,8 @@ const createWindowConfig = () => ({
   notes: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  video: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null }
+  video: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  linkedin: {isOpen: false, zIndex: INITIAL_Z_INDEX, data: null }
 })
 
 
