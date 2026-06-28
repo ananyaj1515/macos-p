@@ -53,9 +53,10 @@ const Safari = () => {
 
         <ProjectCard
             title="Project Sothea"
-            description="Summarises long email threads into actionable insights."
+            description="Asset mapping app that helps medical teams collect field data in rural villages. Record community assets, complete on-site assessments, and map critical health/infrastructure information.
+"
             src="/images/sothea.png"
-            tech={["React", "Node", "OpenAI"]}
+            tech={["React Native", "Node.js", "Expo", "Drizzle", "Typescript"]}
             onClick={() =>
                 window.open("https://github.com/Project-Sothea", "_blank", "noopener,noreferrer")
             }
@@ -76,7 +77,7 @@ const Safari = () => {
             title="RePair"
             description="A sustainability-focused social media platform that promotes eco-friendly habits and a circular way of living. Discover nearby repair specialists and small businesses to fix, reuse, and extend the life of everyday items instead of replacing"
             src="/images/repair.png"
-            tech={["React", "Node", "OpenAI"]}
+            tech={["React Native", "Nativewind", "Supabase", "Google Maps API"]}
             onClick={() =>
                 window.open("https://github.com/Avishi-Gupta/RePair", "_blank", "noopener,noreferrer")
             }
