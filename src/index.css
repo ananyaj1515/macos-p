@@ -106,10 +106,10 @@ body {
   }
 
   .widget-stack {
-    @apply relative flex flex-col gap-4 p-5;
-    padding-top: clamp(1rem, 3vh, 2.5rem);
-    padding-bottom: clamp(2rem, 6vh, 4rem);
-    max-width: min(22rem, 24vw);
+  @apply fixed left-6 z-30 flex flex-col gap-4 max-sm:hidden;
+  width: clamp(160px, 18vw, 300px);
+  top: calc(var(--nav-height, 3.5rem) + 1rem);
+  bottom: calc(var(--dock-bottom-offset) + 6rem);
   }
 
   #window-controls {
