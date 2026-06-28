@@ -530,7 +530,7 @@ body {
     }
 
     .notes-content-header {
-      @apply mb-5 flex flex-wrap items-center justify-between gap-4 text-white text-2xl ;
+      @apply mt-5 mb-5 pl-6 flex flex-wrap items-center justify-between gap-4 text-white text-2xl ;
 
     }
 
