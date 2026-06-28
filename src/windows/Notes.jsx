@@ -52,9 +52,9 @@ const Notes = () => {
                 onClick={() => setActiveNoteId(note.id)}
               >
                 <span className="notes-item-title">{note.title}</span>
-                <div className="flex flex-row">
+                <div className="flex flex-row justify-between gap-y-1/8">
                     <span className="notes-item-date">{note.updated}</span>
-                    <span className="notes-item-meta">{note.subtitle}</span>
+                   
                 </div>
                 
               </button>

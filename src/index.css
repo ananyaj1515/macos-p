@@ -502,15 +502,24 @@ body {
     }
 
     .notes-list {
-      @apply  overflow-y-auto max-h-[calc(70vh-6rem)];
+      @apply overflow-y-auto max-h-[calc(70vh-6rem)];
     }
 
     .notes-list-item {
-      @apply w-full border-b border-t border-0 border-white px-4 py-4 text-left transition-all  ;
+      @apply w-full px-4 py-4 text-left transition-all;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .notes-list-item:first-child {
+      border-top: none;
     }
 
     .notes-list-item.active {
-      @apply border-slate-300 bg-[#daad4cc7] rounded-2xl;
+      @apply border-0 bg-[#daad4cc7] rounded-2xl;
+    }
+
+    .notes-list-item.active + .notes-list-item {
+      border-top: none;
     }
 
     .notes-item-title {
@@ -518,11 +527,11 @@ body {
     }
 
     .notes-item-meta {
-      @apply mt-1 block text-xs text-slate-500;
+      @apply  block text-xs text-white;
     }
 
     .notes-item-date {
-      @apply mt-2 block text-[11px] font-medium uppercase tracking-[0.2em] text-slate-400;
+      @apply block text-[11px] font-medium text-white;
     }
 
     .notes-content {
