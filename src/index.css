@@ -479,7 +479,9 @@ body {
     @apply absolute w-[min(96vw,56rem)] h-[min(80vh,56rem)] left-1/2 top-20 -translate-x-1/2 bg-black shadow-2xl drop-shadow-2xl rounded-3xl overflow-hidden text-slate-900;
     min-height: 70vh;
 
-    
+    h2 {
+      @apply font-bold text-sm text-center w-full;
+    }
 
     .notes-window {
       @apply flex h-full;

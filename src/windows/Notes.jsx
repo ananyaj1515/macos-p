@@ -6,24 +6,21 @@ import { Plus } from "lucide-react"
 const noteItems = [
   {
     id: "welcome",
-    title: "Welcome note",
-    subtitle: "Quick intro",
+    title: "Welcome Note",
     updated: "Today",
-    body: "Welcome to your Notes window. Click a note title on the left to view the content here. This layout is built to feel clean, simple, and similar to Apple Notes.",
+    body: "A collection of thoughts, lessons, project ramblings, and things I wanted to remember. \n It's a little messy, but so is life. \n\nRead at your own caution :)",
   },
   {
     id: "project-plan",
-    title: "Project plan",
-    subtitle: "Portfolio refresh",
+    title: "Thoughts About Teaching",
     updated: "Yesterday",
-    body: "Outline your project milestones, features, and next steps in this note. Use the sidebar to switch between entries and keep everything easy to find.",
+    body: ""
   },
   {
     id: "ideas",
     title: "Ideas",
-    subtitle: "Design and interaction ideas",
     updated: "Jun 27",
-    body: "Capture your ideas here for homepage interactions, layout improvements, and new components. Each note can store quick inspiration or long-form content.",
+    body: "",
   },
 ]
 
@@ -69,7 +66,9 @@ const Notes = () => {
             </div>
           </div>
           <div className="notes-body">
-            <p>{activeNote.body}</p>
+            <p style={{ whiteSpace: "pre-line" }}>
+                {activeNote.body}
+            </p>
           </div>
         </main>
       </div>
