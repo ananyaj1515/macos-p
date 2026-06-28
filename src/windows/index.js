@@ -8,6 +8,6 @@ import Contact from "./Contact";
 import Video from "./Video";
 import Photos from './Photos'
 import Calendar from "./Calendar";
-// import Notes from "./Notes"
+import Notes from "./Notes"
 
-export {Terminal, Safari, Resume, Finder, Text, Image, Contact, Video, Photos, Calendar}
+export {Terminal, Safari, Resume, Finder, Text, Image, Contact, Video, Photos, Calendar, Notes}

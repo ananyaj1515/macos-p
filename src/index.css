@@ -475,6 +475,77 @@ body {
     }
   }
 
+  #notes {
+    @apply absolute w-[min(96vw,56rem)] h-[min(80vh,56rem)] left-1/2 top-20 -translate-x-1/2 bg-black shadow-2xl drop-shadow-2xl rounded-3xl overflow-hidden text-slate-900;
+    min-height: 70vh;
+
+    
+
+    .notes-window {
+      @apply flex h-full;
+    }
+
+    .notes-sidebar {
+      @apply w-80 min-w-[18rem] bg-[#1d2021] border-r  p-5;
+    }
+
+    .notes-sidebar-header {
+      @apply mb-4 flex items-center justify-between;
+
+      h3 {
+        @apply text-base font-semibold text-white;
+      }
+
+      .notes-new-button {
+        @apply rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-700 hover:bg-amber-300;
+      }
+    }
+
+    .notes-list {
+      @apply  overflow-y-auto max-h-[calc(70vh-6rem)];
+    }
+
+    .notes-list-item {
+      @apply w-full border-b border-t border-0 border-white px-4 py-4 text-left transition-all  ;
+    }
+
+    .notes-list-item.active {
+      @apply border-slate-300 bg-[#daad4cc7] rounded-2xl;
+    }
+
+    .notes-item-title {
+      @apply block text-sm font-semibold text-white;
+    }
+
+    .notes-item-meta {
+      @apply mt-1 block text-xs text-slate-500;
+    }
+
+    .notes-item-date {
+      @apply mt-2 block text-[11px] font-medium uppercase tracking-[0.2em] text-slate-400;
+    }
+
+    .notes-content {
+      @apply flex-1 p-6 font-mono;
+    }
+
+    .notes-content-header {
+      @apply mb-5 flex flex-wrap items-center justify-between gap-4 text-white text-2xl ;
+
+    }
+
+    .notes-updated {
+      @apply text-xs text-slate-500;
+    }
+
+    .notes-body {
+      @apply  bg-black p-6 text-sm leading-7 text-white;
+      min-height: 50vh;
+      max-height: calc(70vh - 9rem);
+      overflow-y: auto;
+    }
+  }
+
   #txtfile {
     @apply w-md absolute top-36 right-32 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
 
