@@ -114,9 +114,7 @@ const Safari = () => {
             description={"Work In Progress...\nAI-powered course review dashboard, transforming lengthy student reviews into concise, actionable insights. Search module to quickly grasp workload, praises & complaints"}
             src="/images/loading.png"
             tech={["FastAPI", "Next.js", "PostgresSQL", "OpenAI API"]}
-            onClick={() =>
-                window.open("https://ay2526s2-cs2103t-t15-1.github.io/tp/index.html", "_blank", "noopener,noreferrer")
-            }
+            onClick={() => {}}
         />
 
 
