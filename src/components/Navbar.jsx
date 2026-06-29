@@ -3,7 +3,7 @@ import dayjs from "dayjs"
 import { navLinks } from "#constants"
 import { navIcons } from "../constants"
 import useWindowStore from "#store/window"
-
+import { Sparkle } from "lucide-react"
 
 const Navbar = () => {
 
@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <nav>
             <div>
-                <img src="/images/logo.svg"/>
+                <Sparkle size={16} color="white"/>
                 <p className="font-bold">Ananya's Desktop</p>
                 <ul>
                     {navLinks.map(({id, name, type}) => (
