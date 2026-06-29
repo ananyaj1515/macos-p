@@ -39,7 +39,7 @@ const Safari = () => {
 
         <ProjectCard
             title="Wavelength"
-            description="A cross-platform co-living app that helps housemates stay organized and in sync. Track chores, split expenses, manage groceries, handle guests, plan activities, and coordinate schedules, all in one shared space."
+            description="A cross-platform co-living app that helps housemates stay organized and in sync. Track chores, split expenses, manage groceries, handle guests, plan activities, and coordinate schedules, all in one shared space"
             src="/images/wavelength-preview.png"
             tech={["React Native", "Typescript", "TailwindCSS", "Expo", "Appwrite", "TanStack Query"]}
             onClick={() => {
@@ -59,8 +59,7 @@ const Safari = () => {
 
         <ProjectCard
             title="Project Sothea"
-            description="Asset mapping app that helps medical teams collect field data in rural villages. Record community assets, complete on-site assessments, and map critical health/infrastructure information.
-"
+            description="Asset mapping app that helps medical teams collect field data in rural villages. Record community assets, complete on-site assessments, and map critical health/infrastructure information"
             src="/images/sothea.png"
             tech={["React Native", "Node.js", "Expo", "Drizzle", "Typescript"]}
             onClick={() =>

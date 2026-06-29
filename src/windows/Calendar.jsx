@@ -22,7 +22,7 @@ const experience = [
   },
   {
     year: "June 2025 - August 2025",
-    company: "EdPulse (subsidiary of XSEED Education Pvt Ltd)",
+    company: "EdPulse Technologies",
     title: "AI Research Intern",
     highlights: ["Built a production-ready chatbot using Ollama LLMs and Streamlit", "Applied prompt engineering principles to improve user retention", "Developed a RAG pipeline with LangChain & ChromaDB for domain specific responses"],
     stack: ["Python", "Ollama", "LangChain", "OpenAI API", "ChromaDB", "Streamlit"],
@@ -30,7 +30,7 @@ const experience = [
   },
    {
     year: "July 2023 - August 2023",
-    company: "XSEED Education Pvt Ltd",
+    company: "XSEED Education Pte Ltd",
     title: "Web Developer Intern",
     highlights: ["Developed and maintained features for web applications using Node.js, and Vue.js, resolving critical bugs to enhance user experience and system reliability", "Managed and resolved assigned Jira tickets while contributing in daily standups and weekly sprints, and code reviews within an agile environment"],
     stack: ["Javascript", "Node.js", "Vue.js", "MongoDB", "Git"],
