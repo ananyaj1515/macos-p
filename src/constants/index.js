@@ -81,12 +81,19 @@ const dockApps = [
     canOpen: true,
   },
   {
+    id: "resume",
+    name: "Resume",
+    icon: "preview.png",
+    canOpen: true
+  },
+  {
     id: "github",
     name: "GitHub",
     icon: "github.png",
     canOpen: true,
     link: "https://github.com/ananyaj1515"
   },
+  
   // {
   //   id: "linkedin",
   //   name: "LinkedIn",
