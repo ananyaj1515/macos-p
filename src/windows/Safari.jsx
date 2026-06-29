@@ -43,7 +43,7 @@ const Safari = () => {
             src="/images/wavelength-preview.png"
             tech={["React Native", "Typescript", "TailwindCSS", "Expo", "Appwrite", "TanStack Query"]}
             onClick={() => {
-                openWindow("video", { videoUrl: "/videos/wavelength.mp4", name: "Wavelength Pitch" , link: "https://github.com/Wavelength-Coliving/Wavelength"})
+                openWindow("video", { videoUrl: "/videos/wavelength.mp4", name: "Wavelength Pitch" , link: "https://github.com/Wavelength-Coliving"})
             }}
         />
 
