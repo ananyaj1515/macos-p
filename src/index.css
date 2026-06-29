@@ -226,6 +226,7 @@ body {
     .safari-body {
       @apply p-6 bg-[#1d2021] overflow-y-auto;
     max-height: calc(80vh - 3.5rem); /* subtract approx header height */
+    -webkit-overflow-scrolling: touch;
     }
     
     .safari-grid {
@@ -696,6 +697,7 @@ body {
       @apply  bg-black p-6 text-sm leading-7 text-white;
       min-height: 50vh;
       max-height: calc(70vh - 9rem);
+      -webkit-overflow-scrolling: touch;
       overflow-y: auto;
     }
   }
