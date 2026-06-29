@@ -743,4 +743,9 @@ body {
       }
     }
   }
+
+  #video {
+  @apply absolute top-20 left-1/2 -translate-x-1/2 bg-[#1d2021] shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden text-white;
+  width: min(90vw, 700px);
+}
 }

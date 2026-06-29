@@ -43,15 +43,8 @@ const Safari = () => {
             src="/images/wavelength-preview.png"
             tech={["React Native", "Typescript", "TailwindCSS", "Expo", "Appwrite", "TanStack Query"]}
             onClick={() => {
-                openWindow("video", {id: 1,
-          name: "pitch.mp4",
-          icon: "/images/thumbnail.png",
-          kind: "file",
-          fileType: "video",
-          position: "top-30 right-50",
-          videoUrl: "/videos/pitch.mp4"
-            })}
-    }
+                openWindow("video", { videoUrl: "/videos/wavelength.mp4", name: "Wavelength Pitch" , link: "https://github.com/Wavelength-Coliving/Wavelength"})
+            }}
         />
 
         <ProjectCard
@@ -91,9 +84,9 @@ const Safari = () => {
             description="A sustainability-focused social media platform that promotes eco-friendly habits and a circular way of living. Discover nearby repair specialists and small businesses to fix, reuse, and extend the life of everyday items instead of replacing"
             src="/images/repair.png"
             tech={["React Native", "Nativewind", "Supabase", "Google Maps API"]}
-            onClick={() =>
-                window.open("https://github.com/Avishi-Gupta/RePair", "_blank", "noopener,noreferrer")
-            }
+            onClick={() => {
+                openWindow("video", { videoUrl: "/videos/repair.mp4", name: "RePair Pitch" , link: "https://github.com/Avishi-Gupta/RePair"})
+            }}
         />
 
         <ProjectCard
