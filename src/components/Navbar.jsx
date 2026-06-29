@@ -15,7 +15,13 @@ const Navbar = () => {
                 <p className="font-bold">Ananya's Desktop</p>
                 <ul>
                     {navLinks.map(({id, name, type}) => (
-                        <li key={id} onClick={() => openWindow(type)}>
+                        <li key={id} onClick={() => {
+                            if (type === 'resume') {
+                                window.open('/files/resume.pdf', '_blank', 'noopener,noreferrer')
+                            } else {
+                                openWindow(type)
+                            }
+                        }}>
                             <p>{name}</p>
                         </li>
                     ))}

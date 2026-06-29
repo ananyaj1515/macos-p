@@ -53,21 +53,24 @@ const Dock = () => {
     }, [])
 
     const toggleApp = (app) => {
-        if (!app.canOpen) {
-            return
-        }
+    if (!app.canOpen) return
 
-        const window = windows[app.id]
-        if (!window) {
-            console.error(`Window not found for id: ${app.id}`)
-            return
-        }
-        if (window.isOpen) {
-            closeWindow(app.id)
-        } else {
-            openWindow(app.id)
-        }
+    if (app.id === 'resume') {
+        window.open('/files/resume.pdf', '_blank', 'noopener,noreferrer')
+        return
     }
+
+    const win = windows[app.id]  // ← use 'win' not 'window'
+    if (!win) {
+        console.error(`Window not found for id: ${app.id}`)
+        return
+    }
+    if (win.isOpen) {
+        closeWindow(app.id)
+    } else {
+        openWindow(app.id)
+    }
+}
     
 
 
