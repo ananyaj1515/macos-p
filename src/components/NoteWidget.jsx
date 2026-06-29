@@ -7,27 +7,27 @@ const NoteWidget = () => {
         <div className="w-full h-full overflow-hidden p-3 sm:p-5">
           <div className="flex flex-col justify-between gap-2 sm:gap-3"> 
             <div>
-              <p className="font-roboto text-xs sm:text-lg">About Me</p>
+              <p className="font-georama text-2xl sm:text-lg">About Me</p>
               
             </div>
             
             <div className='flex flex-row align-middle'>
               <GraduationCap size={35}/>
-              <div className="font-mono pl-3 sm:pl-5 flex flex-col text-[0.70rem] sm:text-sm">
+              <div className="font-georama pl-3 sm:pl-5 flex flex-col text-[1rem] sm:text-sm">
                 <p className="leading-tight">Computer Science & Entrepreneurship @ NUS'28 </p>
               </div>
             </div>
 
                 <div className='flex flex-row align-middle'>
                   <Laptop size={50}/>
-                  <div className="font-mono pl-3 sm:pl-5 flex flex-col text-[0.72rem] sm:text-sm">
+                  <div className="font-georama pl-3 sm:pl-5 flex flex-col text-[1rem] sm:text-sm">
                     <p className="leading-tight">Specialising in Full Stack Development, AI & Parallel Computing </p>
                   </div>
                 </div>
 
                 <div className='flex flex-row align-middle'>
                   <BookOpenCheck size={30}/>
-                  <div className="font-mono pl-3 sm:pl-5 flex flex-col text-[0.72rem] sm:text-sm">
+                  <div className="font-georama pl-3 sm:pl-5 flex flex-col text-[1rem] sm:text-sm">
                     <p className="leading-tight">Currently learning: .NET, C# & LangChain </p>
                   </div>
                 </div>
