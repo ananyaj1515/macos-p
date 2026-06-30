@@ -6,7 +6,7 @@ const experience = [
     year: "May 2026 - August 2026",
     company: "Sonicboom Solutions Sdn Bhd",
     title: "Software Engineer Intern",
-    highlights: ["Built a CRUD system in C#/.NET with SQL Server integration and  complex query support ", "Developed a multi-client chat application using TCP/IP sockets and a custom client-server architecture ", "Automated SSL/TLS certificate renewal lifecycle for servers"],
+    highlights: ["Designed and implemented a web-based SSRS reporting system with caching to optimize report parameter loading from snapshots", "Automated SSL/TLS certificate renewal workflows, improving server security and reducing manual maintenance overhead ", "Explored integration of AI-assisted tools (e.g Replit AI) to prototype UI redesigns and modernize legacy product interfaces"],
     stack: [".NET", "C#", "SQL Server", "WPF", "AvaloniaUI", "PowerShell", "XAML", "HTML", "CSS"],
     location: "Kuala Lumpur, Malaysia",
     backgroundColor: "#ff6b8b"
@@ -24,7 +24,7 @@ const experience = [
     year: "June 2025 - August 2025",
     company: "EdPulse Technologies",
     title: "AI Research Intern",
-    highlights: ["Built a production-ready chatbot using Ollama LLMs and Streamlit", "Applied prompt engineering principles to improve user retention", "Developed a RAG pipeline with LangChain & ChromaDB for domain specific responses"],
+    highlights: ["Built a production chatbot using Ollama and  Streamlit for querying and interacting with student academic reports ", "Implemented a RAG pipeline with LangChain and ChromaDB with memory-enabled dialogue for context-aware multi-turn interactions", "Developed a multi-agent LLM system that analyzes student behaviour through AI conversations"],
     stack: ["Python", "Ollama", "LangChain", "OpenAI API", "ChromaDB", "Streamlit"],
     location: "Remote",
   },
