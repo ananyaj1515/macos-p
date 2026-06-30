@@ -48,12 +48,12 @@ const Safari = () => {
         />
 
         <ProjectCard
-            title="MIDI Waterfall"
-            description="A terminal-based MIDI visualizer written in Rust that turns .mid files into a Synthesia-style falling note waterfall with a live piano keyboard in your terminal. No audio setup required, just run it and watch the notes play out visually"
-            src="/images/midi-roll.png"
-            tech={["Rust"]}
+            title="NUS LastBus"
+            description="2D platformer inspired by everyday life at NUS: Navigate iconic hills, dodge rage-inducing obstacles like FASS chickens and the Bell Curve God, and see if you can survive to catch the last bus home"
+            src="/images/nus-lastbus.png"
+            tech={["Unity", "C#"]}
             onClick={() =>
-                window.open("https://github.com/ananyaj1515/midi-roll", "_blank", "noopener,noreferrer")
+                window.open("https://devpost.com/software/nus-lastbus", "_blank", "noopener,noreferrer")
             }
         />
 
@@ -67,17 +67,17 @@ const Safari = () => {
             }
         />
 
-
         <ProjectCard
-            title="NUS LastBus"
-            description="2D platformer inspired by everyday life at NUS: Navigate iconic hills, dodge rage-inducing obstacles like FASS chickens and the Bell Curve God, and see if you can survive to catch the last bus home"
-            src="/images/nus-lastbus.png"
-            tech={["Unity", "C#"]}
+            title="MIDI Waterfall"
+            description="A terminal-based MIDI visualizer written in Rust that turns .mid files into a Synthesia-style falling note waterfall with a live piano keyboard in your terminal. No audio setup required, just run it and watch the notes play out visually"
+            src="/images/midi-roll.png"
+            tech={["Rust"]}
             onClick={() =>
-                window.open("https://devpost.com/software/nus-lastbus", "_blank", "noopener,noreferrer")
+                window.open("https://github.com/ananyaj1515/midi-roll", "_blank", "noopener,noreferrer")
             }
         />
 
+        
         <ProjectCard
             title="RePair"
             description="A sustainability-focused social media platform that promotes eco-friendly habits and a circular way of living. Discover nearby repair specialists and small businesses to fix, reuse, and extend the life of everyday items instead of replacing"
